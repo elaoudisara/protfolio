@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سارة العودي | ملفي التعريفي</title>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Outfit:wght@700;800;900&display=swap');
+
+:root{
+  --bg:#0D0D1A; --fg:#fff; --muted:#2D1B4E;
+  --magenta:#FF3AF2; --cyan:#00F5D4; --yellow:#FFE600;
+  --orange:#FF6B35; --purple:#7B2FFF;
+  --pink:#FF3AF2; --pink-dark:#7B2FFF; --pink-light:#2D1B4E;
+  --white:#fff; --text:#fff; --gray:rgba(255,255,255,.78);
+  --shadow-glow:0 0 20px rgba(255,58,242,.5),0 0 40px rgba(0,245,212,.3);
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+html{background:var(--bg)}
+body{
+  font-family:"DM Sans","Tahoma",Arial,sans-serif;
+  background:
+    radial-gradient(circle at 10% 15%,rgba(255,58,242,.16),transparent 28%),
+    radial-gradient(circle at 90% 35%,rgba(0,245,212,.12),transparent 25%),
+    repeating-linear-gradient(45deg,transparent 0,transparent 12px,rgba(255,230,0,.025) 12px,rgba(255,230,0,.025) 24px),
+    #0D0D1A;
+  color:var(--fg);line-height:1.7;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.22;
+  background-image:radial-gradient(circle,var(--magenta) 1px,transparent 1px);
+  background-size:24px 24px;mix-blend-mode:screen;
+}
+a{text-decoration:none;color:inherit}
+header{position:fixed;top:0;right:0;left:0;z-index:1000;background:rgba(13,13,26,.82);backdrop-filter:blur(14px);border-bottom:4px solid var(--yellow);box-shadow:0 0 25px rgba(255,58,242,.3)}
+nav{max-width:1280px;margin:auto;height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 25px}
+.logo{font-family:"Outfit",sans-serif;font-size:28px;font-weight:900;color:var(--magenta);text-shadow:2px 2px 0 var(--cyan),4px 4px 0 var(--purple);transform:rotate(-2deg)}
+.logo span{color:var(--yellow)}
+.nav-links{display:flex;gap:12px;list-style:none}
+.nav-links a{font-weight:800;color:#fff;padding:9px 15px;border:2px solid var(--cyan);border-radius:999px;background:rgba(45,27,78,.75);transition:.25s}
+.nav-links li:nth-child(2) a{border-color:var(--yellow)}
+.nav-links li:nth-child(3) a{border-color:var(--orange)}
+.nav-links li:nth-child(4) a{border-color:var(--purple)}
+.nav-links li:nth-child(5) a{border-color:var(--magenta)}
+.nav-links a:hover{background:var(--magenta);color:#0D0D1A;transform:translateY(-4px) rotate(2deg);box-shadow:6px 6px 0 var(--yellow)}
+.menu-btn{display:none;background:var(--magenta);color:#0D0D1A;border:4px solid var(--yellow);border-radius:999px;padding:8px 14px;font-size:20px;font-weight:900;cursor:pointer;box-shadow:6px 6px 0 var(--cyan)}
+
+main,section,footer{position:relative;z-index:1}
+section{padding:110px 25px}
+.section-container{max-width:1280px;margin:auto;position:relative}
+.section-container::before{content:"✦";position:absolute;top:-45px;left:2%;font-size:65px;color:var(--yellow);animation:float 5s ease-in-out infinite;pointer-events:none}
+.section-container::after{content:"✦";position:absolute;bottom:-35px;right:2%;font-size:45px;color:var(--cyan);animation:wiggle 1.8s ease-in-out infinite;pointer-events:none}
+.hero{min-height:100vh;max-width:none;margin:auto;padding:145px 7vw 100px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:70px;overflow:hidden}
+.hero::before{content:"SARA";position:absolute;left:-4%;top:15%;font-family:"Outfit";font-size:clamp(120px,22vw,330px);font-weight:900;line-height:.8;color:var(--magenta);opacity:.09;transform:rotate(-8deg);pointer-events:none}
+.hero::after{content:"✦  ✧  ★  ✦";position:absolute;right:3%;bottom:8%;font-size:50px;color:var(--cyan);letter-spacing:20px;animation:float-reverse 6s ease-in-out infinite;pointer-events:none}
+.hero-text{animation:fadeInRight 1s ease;position:relative;z-index:3}
+.hello{display:inline-block;background:var(--yellow);color:#0D0D1A;padding:8px 18px;border:4px solid var(--magenta);border-radius:999px;font-weight:900;margin-bottom:22px;box-shadow:8px 8px 0 var(--cyan);transform:rotate(-2deg)}
+.hero h1,.section-title h2,.dream-box h2,.canva-box h3,.skill-card h3,.project-content h3{
+  font-family:"Outfit","Tahoma",sans-serif;font-weight:900;
+}
+.hero h1{font-size:clamp(64px,9vw,132px);line-height:.95;letter-spacing:-.06em;color:#fff;margin-bottom:25px;text-shadow:4px 4px 0 var(--purple),8px 8px 0 var(--magenta),12px 12px 0 var(--cyan)}
+.hero h1 span{background:linear-gradient(90deg,var(--magenta),var(--cyan),var(--yellow),var(--magenta));background-size:300% 100%;animation:gradient-shift 4s ease infinite;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-description{font-size:20px;color:rgba(255,255,255,.86);max-width:650px;margin-bottom:35px}
+.buttons{display:flex;gap:20px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;transition:.3s}
+.btn-primary{background:linear-gradient(90deg,var(--magenta),var(--purple),var(--cyan));background-size:250%;color:#0D0D1A;border:4px solid var(--yellow);box-shadow:0 0 25px rgba(255,58,242,.5),8px 8px 0 var(--yellow),16px 16px 0 var(--magenta);animation:gradient-shift 4s ease infinite}
+.btn-primary:hover{transform:scale(1.08) translate(-3px,-3px);box-shadow:0 0 40px rgba(255,58,242,.75),10px 10px 0 var(--yellow),20px 20px 0 var(--magenta)}
+.btn-outline{background:rgba(45,27,78,.75);border:4px dashed var(--cyan);color:#fff;box-shadow:8px 8px 0 var(--purple)}
+.btn-outline:hover{background:var(--cyan);color:#0D0D1A;border-style:solid;transform:scale(1.05) rotate(-2deg);box-shadow:10px 10px 0 var(--yellow)}
+
+.hero-image{position:relative;display:flex;justify-content:center;animation:fadeInLeft 1s ease;z-index:2}
+.image-circle{width:430px;height:430px;border-radius:46% 54% 60% 40%/45% 45% 55% 55%;background:linear-gradient(135deg,var(--magenta),var(--purple),var(--cyan));display:flex;justify-content:center;align-items:center;position:relative;box-shadow:0 0 40px rgba(255,58,242,.6),25px 25px 0 var(--yellow),-18px 20px 0 var(--cyan);animation:float 6s ease-in-out infinite}
+.image-circle::before{content:"✦";position:absolute;top:-35px;right:15px;color:var(--yellow);font-size:70px;animation:spin-slow 20s linear infinite}
+.image-circle::after{content:"♡";position:absolute;bottom:-30px;left:-25px;color:var(--magenta);font-size:75px;text-shadow:4px 4px 0 var(--cyan)}
+.hero-image img{width:370px;height:370px;object-fit:cover;border-radius:44% 56% 52% 48%;border:8px solid #fff;box-shadow:0 0 30px rgba(255,255,255,.25),12px 12px 0 var(--purple)}
+
+.section-title{text-align:center;margin-bottom:65px;position:relative}
+.section-title h2{font-size:clamp(48px,6vw,78px);line-height:1;letter-spacing:-.04em;text-shadow:3px 3px 0 var(--purple),6px 6px 0 var(--magenta)}
+.section-title p{color:rgba(255,255,255,.72);font-size:18px;margin-top:14px}
+.about{background:linear-gradient(135deg,rgba(255,58,242,.08),rgba(0,245,212,.05));border-top:8px double var(--cyan);border-bottom:8px dashed var(--yellow)}
+.about-content{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-card{background:rgba(45,27,78,.82);padding:40px;border:4px solid var(--magenta);border-radius:32px;box-shadow:12px 12px 0 var(--cyan),24px 24px 0 var(--yellow);transform:rotate(-1deg);backdrop-filter:blur(8px)}
+.about-card h3{color:var(--yellow);font-size:30px;font-family:"Outfit";text-shadow:2px 2px 0 var(--magenta);margin-bottom:15px}
+.about-card p{color:rgba(255,255,255,.85)}
+.info-list{display:grid;gap:18px}
+.info-item{background:rgba(45,27,78,.8);padding:18px 20px;border:4px solid var(--cyan);border-radius:24px;box-shadow:8px 8px 0 var(--purple);display:flex;align-items:center;gap:15px;transition:.3s}
+.info-item:nth-child(2){border-color:var(--yellow);transform:translateX(-10px) rotate(1deg)}
+.info-item:nth-child(3){border-color:var(--orange);transform:translateX(8px) rotate(-1deg)}
+.info-item:nth-child(4){border-color:var(--magenta);transform:translateX(-4px) rotate(1deg)}
+.info-item:hover{transform:translate(-5px,-7px) scale(1.02)!important}
+.info-icon{width:52px;height:52px;background:var(--magenta);color:#0D0D1A;border:3px solid var(--yellow);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:24px;flex:none}
+.info-item strong{display:block;color:var(--cyan);font-family:"Outfit"}
+
+.skills{background:linear-gradient(135deg,rgba(0,245,212,.08),rgba(123,47,255,.1));overflow:hidden}
+.skills::before{content:"SKILLS";position:absolute;right:-2%;top:5%;font-family:"Outfit";font-size:clamp(100px,18vw,260px);font-weight:900;color:var(--cyan);opacity:.06;transform:rotate(8deg);pointer-events:none}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
+.skill-card{position:relative;background:rgba(45,27,78,.84);border:4px solid var(--magenta);border-radius:30px;padding:34px;text-align:center;box-shadow:10px 10px 0 var(--yellow),20px 20px 0 var(--purple);transition:.35s;backdrop-filter:blur(7px);overflow:hidden}
+.skill-card:nth-child(2){border-color:var(--cyan);transform:translateY(22px) rotate(1deg);box-shadow:10px 10px 0 var(--orange),20px 20px 0 var(--cyan)}
+.skill-card:nth-child(3){border-color:var(--yellow);transform:rotate(-1deg);box-shadow:10px 10px 0 var(--magenta),20px 20px 0 var(--purple)}
+.skill-card:nth-child(4){border-color:var(--orange);transform:translateY(18px) rotate(-1deg)}
+.skill-card:nth-child(5){border-color:var(--purple);transform:rotate(1deg);box-shadow:10px 10px 0 var(--cyan),20px 20px 0 var(--magenta)}
+.skill-card:nth-child(6){border-color:var(--cyan);transform:translateY(12px) rotate(-1deg);box-shadow:10px 10px 0 var(--yellow),20px 20px 0 var(--orange)}
+.skill-card:hover{transform:translateY(-10px) rotate(2deg) scale(1.03)!important;box-shadow:0 0 30px rgba(255,58,242,.55),14px 14px 0 var(--yellow),26px 26px 0 var(--magenta)}
+.skill-icon{width:82px;height:82px;margin:0 auto 20px;border-radius:22px;background:var(--purple);border:4px dashed var(--yellow);display:flex;align-items:center;justify-content:center;font-size:38px;animation:bounce-subtle 2s ease-in-out infinite}
+.skill-card:nth-child(2) .skill-icon{background:var(--cyan);border-color:var(--orange)}
+.skill-card:nth-child(3) .skill-icon{background:var(--yellow);border-color:var(--magenta)}
+.skill-card h3{color:#fff;font-size:25px;margin-bottom:10px;text-shadow:2px 2px 0 var(--magenta)}
+.skill-card p{color:rgba(255,255,255,.76);font-size:16px}
+
+.canva-section{background:rgba(13,13,26,.96)}
+.canva-box{background:linear-gradient(135deg,rgba(255,58,242,.18),rgba(0,245,212,.12));border:8px solid var(--yellow);border-radius:36px;padding:55px;display:grid;grid-template-columns:150px 1fr;align-items:center;gap:40px;box-shadow:15px 15px 0 var(--magenta),30px 30px 0 var(--cyan);transform:rotate(-1deg)}
+.canva-logo{width:130px;height:130px;border-radius:35px;background:linear-gradient(135deg,var(--magenta),var(--purple));color:#fff;border:5px solid var(--cyan);display:flex;justify-content:center;align-items:center;font-family:"Outfit";font-size:58px;font-weight:900;box-shadow:0 0 30px rgba(255,58,242,.6);animation:pulse-glow 2s ease-in-out infinite}
+.canva-box h3{color:var(--yellow);font-size:34px;text-shadow:3px 3px 0 var(--magenta);margin-bottom:10px}
+.canva-box p{color:rgba(255,255,255,.84);font-size:18px}
+
+.projects{background:linear-gradient(135deg,rgba(255,107,53,.08),rgba(255,230,0,.04))}
+.projects::before{content:"CREATE";position:absolute;left:-4%;top:8%;font-family:"Outfit";font-size:clamp(100px,18vw,260px);font-weight:900;color:var(--orange);opacity:.055;transform:rotate(-7deg);pointer-events:none}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;align-items:start}
+.project{background:rgba(45,27,78,.88);border:4px solid var(--orange);border-radius:30px;overflow:hidden;box-shadow:10px 10px 0 var(--cyan),20px 20px 0 var(--magenta);transition:.3s}
+.project:nth-child(2){border-color:var(--cyan);transform:translateY(30px) rotate(1deg);box-shadow:10px 10px 0 var(--yellow),20px 20px 0 var(--purple)}
+.project:nth-child(3){border-color:var(--yellow);transform:rotate(-1deg);box-shadow:10px 10px 0 var(--magenta),20px 20px 0 var(--cyan)}
+.project:hover{transform:translateY(-10px) rotate(2deg) scale(1.03)!important}
+.project-top{height:170px;background:linear-gradient(135deg,var(--purple),var(--magenta));display:flex;justify-content:center;align-items:center;font-size:65px;border-bottom:5px dashed var(--yellow);position:relative}
+.project-top::after{content:"✦";position:absolute;right:18px;top:10px;color:var(--cyan);font-size:35px}
+.project-content{padding:26px}
+.project-content h3{color:var(--yellow);font-size:25px;text-shadow:2px 2px 0 var(--magenta);margin-bottom:8px}
+.project-content p{color:rgba(255,255,255,.78);font-size:16px}
+
+.dream{background:linear-gradient(135deg,rgba(123,47,255,.14),rgba(255,58,242,.08))}
+.dream-box{position:relative;text-align:center;max-width:900px;margin:auto;background:rgba(45,27,78,.88);border:8px double var(--cyan);border-radius:38px;padding:65px 35px;box-shadow:14px 14px 0 var(--yellow),28px 28px 0 var(--magenta);overflow:hidden}
+.dream-box::before{content:"DREAM";position:absolute;left:-15%;bottom:-35%;font-family:"Outfit";font-size:200px;font-weight:900;color:var(--purple);opacity:.12;transform:rotate(-10deg)}
+.dream-icon{font-size:65px;margin-bottom:15px;animation:float 4s ease-in-out infinite}
+.dream-box h2{position:relative;color:var(--yellow);font-size:clamp(38px,5vw,62px);text-shadow:3px 3px 0 var(--magenta),6px 6px 0 var(--purple);margin-bottom:15px}
+.dream-box p{position:relative;color:rgba(255,255,255,.86);font-size:20px}
+
+.contact{background:linear-gradient(135deg,var(--magenta),var(--purple),var(--cyan));background-size:250%;animation:gradient-shift 8s ease infinite;color:#0D0D1A;text-align:center;border-top:8px solid var(--yellow)}
+.contact .section-title h2,.contact .section-title p{color:#0D0D1A;text-shadow:none}
+.contact .section-title h2{text-shadow:3px 3px 0 var(--yellow)}
+.contact-box{max-width:850px;margin:auto}
+.contact-button{display:inline-block;margin-top:20px;background:#fff;color:#0D0D1A;border:5px solid var(--yellow);padding:15px 34px;border-radius:999px;font-weight:900;box-shadow:9px 9px 0 var(--purple);transition:.3s}
+.contact-button:hover{transform:scale(1.08) rotate(-2deg);box-shadow:12px 12px 0 var(--magenta)}
+footer{background:#080811;color:var(--cyan);text-align:center;padding:25px;border-top:4px dashed var(--magenta);font-weight:700}
+#topBtn{position:fixed;bottom:25px;left:25px;width:55px;height:55px;border:4px solid var(--yellow);border-radius:50%;background:var(--magenta);color:#0D0D1A;font-size:23px;font-weight:900;cursor:pointer;display:none;box-shadow:0 0 20px rgba(255,58,242,.6),7px 7px 0 var(--cyan);z-index:999;transition:.25s}
+#topBtn:hover{transform:scale(1.1) rotate(-8deg)}
+
+@keyframes fadeInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fadeInLeft{from{opacity:0;transform:translateX(-50px)}to{opacity:1;transform:translateX(0)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-20px) rotate(5deg)}}
+@keyframes float-reverse{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(20px) rotate(-5deg)}}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 20px rgba(255,58,242,.5)}50%{box-shadow:0 0 40px rgba(255,58,242,.8),0 0 60px rgba(0,245,212,.5)}}
+@keyframes gradient-shift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes spin-slow{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes wiggle{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes bounce-subtle{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+.reveal-card{opacity:1;filter:none;transition:transform .35s ease, box-shadow .35s ease}
+.reveal-card.is-visible{opacity:1;filter:none}
+
+@media(max-width:850px){
+  .nav-links{display:none;position:absolute;top:82px;right:15px;left:15px;background:rgba(13,13,26,.97);border:4px solid var(--magenta);border-radius:24px;padding:20px;flex-direction:column;gap:12px;box-shadow:10px 10px 0 var(--cyan)}
+  .nav-links.active{display:flex}.menu-btn{display:block}
+  .hero{grid-template-columns:1fr;text-align:center;padding-top:125px}
+  .hero-description{margin-right:auto;margin-left:auto}.buttons{justify-content:center}
+  .hero-image{order:-1}.image-circle{width:320px;height:320px}.hero-image img{width:275px;height:275px}
+  .about-content{grid-template-columns:1fr}.skills-grid,.projects-grid{grid-template-columns:1fr}
+  .skill-card:nth-child(n),.project:nth-child(n){transform:none}
+  .skill-card:hover,.project:hover{transform:translateY(-8px) scale(1.02)!important}
+  .canva-box{grid-template-columns:1fr;text-align:center;justify-items:center;padding:40px 25px}
+}
+@media(max-width:450px){
+  section{padding:85px 18px}.hero{padding-left:18px;padding-right:18px}
+  .hero h1{font-size:54px}.image-circle{width:270px;height:270px}.hero-image img{width:235px;height:235px}
+  .section-title h2{font-size:42px}.about-card{padding:28px}.canva-box{box-shadow:9px 9px 0 var(--magenta),18px 18px 0 var(--cyan)}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.15s!important;scroll-behavior:auto!important}
+}
+
+/* وضوح أقسام المحتوى الرئيسية */
+.about, .skills, .projects { position: relative; z-index: 1; }
+.about .section-container, .skills .section-container, .projects .section-container { position: relative; z-index: 3; }
+.about-card, .info-item, .skill-card, .project { opacity: 1 !important; visibility: visible !important; }
+.section-title h2 { position: relative; z-index: 4; color: #fff; }
+.section-title p { position: relative; z-index: 4; }
+
+/* =========================
+   تحسين الهاتف + قائمة متحركة
+========================= */
+
+.menu-btn {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--magenta), var(--purple));
+    color: #fff;
+    border: 2px solid var(--yellow);
+    border-radius: 14px;
+    box-shadow: 5px 5px 0 var(--cyan), 0 0 18px rgba(255,58,242,.35);
+    overflow: hidden;
+    z-index: 1002;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    transition: transform .3s ease, top .3s ease, box-shadow .3s ease;
+}
+
+.menu-btn::before {
+    top: 17px;
+    box-shadow: 0 9px 0 #fff;
+}
+
+.menu-btn::after {
+    top: 26px;
+}
+
+.menu-btn.open {
+    transform: rotate(-3deg);
+    box-shadow: 4px 4px 0 var(--yellow), 0 0 25px rgba(0,245,212,.4);
+}
+
+.menu-btn.open::before {
+    top: 22px;
+    transform: rotate(45deg);
+    box-shadow: none;
+}
+
+.menu-btn.open::after {
+    top: 22px;
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 850px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 7px 10px;
+    }
+
+    nav {
+        height: 62px;
+        padding: 0 8px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: fixed;
+        top: 77px;
+        right: 12px;
+        left: 12px;
+        width: auto;
+        max-height: calc(100vh - 95px);
+        overflow-y: auto;
+        padding: 16px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        list-style: none;
+        background: rgba(13,13,26,.96);
+        border: 2px solid var(--magenta);
+        border-radius: 22px;
+        box-shadow: 8px 8px 0 var(--cyan), 0 0 35px rgba(255,58,242,.28);
+        backdrop-filter: blur(18px);
+        transform: translateY(-18px) scale(.96);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        clip-path: inset(0 0 100% 0 round 22px);
+        transition:
+            opacity .28s ease,
+            transform .35s cubic-bezier(.2,.8,.2,1),
+            clip-path .45s cubic-bezier(.2,.8,.2,1),
+            visibility 0s linear .45s;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0) scale(1);
+        clip-path: inset(0 0 0 0 round 22px);
+        transition:
+            opacity .28s ease,
+            transform .35s cubic-bezier(.2,.8,.2,1),
+            clip-path .45s cubic-bezier(.2,.8,.2,1),
+            visibility 0s;
+    }
+
+    .nav-links li {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    .nav-links.active li {
+        animation: mobileMenuItem .45s cubic-bezier(.2,.8,.2,1) forwards;
+    }
+
+    .nav-links.active li:nth-child(1) { animation-delay: .04s; }
+    .nav-links.active li:nth-child(2) { animation-delay: .09s; }
+    .nav-links.active li:nth-child(3) { animation-delay: .14s; }
+    .nav-links.active li:nth-child(4) { animation-delay: .19s; }
+    .nav-links.active li:nth-child(5) { animation-delay: .24s; }
+
+    .nav-links a {
+        display: block;
+        padding: 13px 16px;
+        color: #fff !important;
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 14px;
+        background: rgba(255,255,255,.05);
+        text-align: center;
+        transition: transform .2s ease, background .2s ease, color .2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:active {
+        transform: translateX(-5px);
+        background: linear-gradient(90deg, var(--magenta), var(--purple));
+        color: #fff !important;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 105px 16px 55px;
+        gap: 28px;
+    }
+
+    .hero-image {
+        margin-top: 8px;
+    }
+
+    .image-circle {
+        width: min(76vw, 300px);
+        height: min(76vw, 300px);
+        box-shadow: 8px 8px 0 var(--yellow), 0 0 30px rgba(255,58,242,.3);
+    }
+
+    .hero-image img {
+        width: calc(min(76vw, 300px) - 30px);
+        height: calc(min(76vw, 300px) - 30px);
+        border-width: 5px;
+    }
+
+    .hello {
+        font-size: 13px;
+        padding: 7px 13px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 13vw, 58px);
+        margin-bottom: 12px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.9;
+        margin-bottom: 22px;
+    }
+
+    .buttons {
+        gap: 12px;
+    }
+
+    .btn {
+        padding: 11px 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        padding: 65px 16px;
+    }
+
+    .section-title {
+        margin-bottom: 32px;
+    }
+
+    .section-title h2 {
+        font-size: clamp(30px, 9vw, 40px);
+        line-height: 1.2;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+    .about-content,
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-card,
+    .skill-card,
+    .project-content {
+        padding: 22px;
+    }
+
+    .info-list {
+        gap: 12px;
+    }
+
+    .info-item {
+        padding: 14px;
+    }
+
+    .canva-box {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 28px 20px;
+        text-align: center;
+    }
+
+    .canva-logo {
+        width: 92px;
+        height: 92px;
+        font-size: 38px;
+        border-radius: 26px;
+    }
+
+    .canva-box h3 {
+        font-size: 24px;
+    }
+
+    .dream-box {
+        padding: 38px 20px;
+    }
+
+    .dream-box h2 {
+        font-size: 27px;
+    }
+
+    .dream-box p {
+        font-size: 16px;
+    }
+
+    #topBtn {
+        bottom: 18px;
+        left: 15px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero {
+        padding-top: 95px;
+    }
+
+    .image-circle {
+        width: 245px;
+        height: 245px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .skill-card,
+    .about-card {
+        border-radius: 18px;
+    }
+}
+
+@keyframes mobileMenuItem {
+    from {
+        opacity: 0;
+        transform: translateX(25px) rotate(1deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-links,
+    .nav-links li,
+    .menu-btn,
+    .menu-btn::before,
+    .menu-btn::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         شريط التنقل
+    ========================== -->
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                سارة <span>♡</span>
+            </div>
+
+            <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن سارة</a></li>
+                <li><a href="#skills">مهاراتي</a></li>
+                <li><a href="#projects">أعمالي</a></li>
+                <li><a href="#dream">طموحي</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         الرئيسية
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <span class="hello">
+                    أهلاً وسهلاً بكم في موقعي 🌸
+                </span>
+
+                <h1>
+                    أنا <span>سارة</span>
+                </h1>
+
+                <p class="hero-description">
+                    مرحباً! أنا سارة، فتاة مغربية أحب التعلم والإبداع
+                    واكتشاف أشياء جديدة. أهتم بالتصميم والمونتاج
+                    وأحب استخدام التكنولوجيا لصنع أفكار جميلة ومميزة.
+                </p>
+
+                <div class="buttons">
+                    <a href="#about" class="btn btn-primary">
+                        تعرف عليّ
+                    </a>
+
+                    <a href="#skills" class="btn btn-outline">
+                        مهاراتي
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-circle">
+
+                    <!-- الصورة التي أرسلتها -->
+                    <img
+                        src="الشخصية المطلوبة.jpg"
+                        alt="صورة سارة"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             عن سارة
+        ========================== -->
+
+        <section class="about" id="about">
+
+            <div class="section-container">
+
+                <div class="section-title">
+                    <h2>من أنا؟ 💗</h2>
+                    <p>تعرفوا أكثر على سارة</p>
+                </div>
+
+
+                <div class="about-content">
+
+                    <div class="about-card">
+
+                        <h3>نبذة عني 🌷</h3>
+
+                        <p>
+                            أنا سارة، عمري 11 سنة وأعيش في المغرب.
+                            أدرس في المستوى الأولى إعدادي.
+                            أحب التعلم وتجربة أشياء جديدة، وخاصة الأشياء
+                            التي تساعدني على تطوير مهاراتي في الحاسوب
+                            والتصميم والإبداع.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            أحب أن أتعلم خطوة بخطوة، وأحاول دائماً أن
+                            أحول الأفكار البسيطة إلى أعمال جميلة ومميزة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-list">
+
+                        <div class="info-item">
+                            <div class="info-icon">👧</div>
+                            <div>
+                                <strong>الاسم</strong>
+                                سارة
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🎂</div>
+                            <div>
+                                <strong>العمر</strong>
+                                11 سنة
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🇲🇦</div>
+                            <div>
+                                <strong>البلد</strong>
+                                المغرب
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📚</div>
+                            <div>
+                                <strong>الدراسة</strong>
+                                الأولى إعدادي
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             المهارات
+        ========================== -->
+
+        <section class="skills" id="skills">
+
+            <div class="section-container">
+
+                <div class="section-title">
+                    <h2>مهاراتي ✨</h2>
+                    <p>الأشياء التي أحب تعلمها وتطويرها</p>
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            🎨
+                        </div>
+
+                        <h3>التصميم</h3>
+
+                        <p>
+                            أحب تصميم الصور والمنشورات والأفكار
+                            الإبداعية بطريقة جميلة ومنظمة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            🎬
+                        </div>
+
+                        <h3>المونتاج</h3>
+
+                        <p>
+                            أهتم بتعديل الفيديوهات وترتيب المقاطع
+                            وإضافة اللمسات الإبداعية عليها.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            💻
+                        </div>
+
+                        <h3>مهارات الحاسوب</h3>
+
+                        <p>
+                            أحب اكتشاف البرامج والأدوات الرقمية
+                            وتجربة طرق جديدة لإنجاز المشاريع.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            🖌️
+                        </div>
+
+                        <h3>الإبداع</h3>
+
+                        <p>
+                            أحب تحويل الأفكار إلى تصاميم ومشاريع
+                            بسيطة ومميزة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            🔎
+                        </div>
+
+                        <h3>البحث والتعلم</h3>
+
+                        <p>
+                            أحب البحث عن إجابات للأسئلة التي تخطر
+                            في بالي واكتشاف معلومات جديدة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            🚀
+                        </div>
+
+                        <h3>تطوير الذات</h3>
+
+                        <p>
+                            أتعلم باستمرار وأحاول تطوير مهاراتي
+                            وتجربة أشياء جديدة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Canva
+        ========================== -->
+
+        <section class="canva-section">
+
+            <div class="section-container">
+
+                <div class="section-title">
+                    <h2>Canva 💖</h2>
+                    <p>إحدى الأدوات التي أحب استخدامها</p>
+                </div>
+
+
+                <div class="canva-box">
+
+                    <div class="canva-logo">
+                        C
+                    </div>
+
+                    <div>
+
+                        <h3>متمكنة في Canva</h3>
+
+                        <p>
+                            أستخدم Canva لإنشاء التصاميم والمنشورات
+                            والعروض والأعمال الإبداعية.
+                            أحب تجربة القوالب والخطوط والعناصر المختلفة
+                            حتى أصل إلى تصميم جميل ومنظم.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             الأعمال
+        ========================== -->
+
+        <section class="projects" id="projects">
+
+            <div class="section-container">
+
+                <div class="section-title">
+                    <h2>ماذا أحب أن أصنع؟ 🌸</h2>
+                    <p>أفكار ومشاريع يمكنني تطويرها</p>
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <div class="project">
+
+                        <div class="project-top">
+                            🎨
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>تصاميم إبداعية</h3>
+
+                            <p>
+                                تصميم صور ومنشورات وبطاقات
+                                وأفكار بلمسة شخصية.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project">
+
+                        <div class="project-top">
+                            🎥
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>فيديوهات ومونتاج</h3>
+
+                            <p>
+                                صناعة فيديوهات بسيطة وإضافة
+                                النصوص والمؤثرات والترتيب المناسب.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project">
+
+                        <div class="project-top">
+                            💡
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>أفكار جديدة</h3>
+
+                            <p>
+                                البحث والتعلم وتحويل المعلومات
+                                والأفكار إلى مشاريع مفيدة.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             الطموح
+        ========================== -->
+
+        <section class="dream" id="dream">
+
+            <div class="section-container">
+
+                <div class="section-title">
+                    <h2>طموحي 🌟</h2>
+                    <p>أحلامي للمستقبل</p>
+                </div>
+
+
+                <div class="dream-box">
+
+                    <div class="dream-icon">
+                        🩺
+                    </div>
+
+                    <h2>أريد أن أصبح طبيبة</h2>
+
+                    <p>
+                        أحلم في المستقبل بأن أصبح طبيبة،
+                        لأنني أحب مساعدة الناس.
+                        وسأستمر في التعلم وتطوير نفسي واكتساب
+                        مهارات جديدة حتى أقترب من أهدافي خطوة بخطوة.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             التواصل
+        ========================== -->
+
+        <section class="contact">
+
+            <div class="section-container">
+
+                <div class="contact-box">
+
+                    <div class="section-title">
+
+                        <h2>شكراً لزيارتكم 💕</h2>
+
+                        <p>
+                            سعيدٌة بوجودكم في موقعي التعريفي.
+                            أتمنى أن يكون التصميم قد أعجبكم!
+                        </p>
+
+                    </div>
+
+                    <a href="#home" class="contact-button">
+                        العودة إلى البداية ↑
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         الفوتر
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 سارة | جميع الحقوق محفوظة 💗
+        </p>
+
+    </footer>
+
+
+    <!-- زر العودة للأعلى -->
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+
+    <script>
+
+        // القائمة في الهاتف
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("active");
+            menuBtn.classList.toggle("open", isOpen);
+            menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+
+        // إغلاق القائمة عند الضغط على رابط
+        document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+                navLinks.classList.remove("active");
+                menuBtn.classList.remove("open");
+                menuBtn.setAttribute("aria-expanded", "false");
+            });
+
+        });
+
+
+        // زر العودة للأعلى
+        const topBtn = document.getElementById("topBtn");
+
+        window.addEventListener("scroll", function() {
+
+            if (window.scrollY > 400) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+
+        });
+
+
+        topBtn.addEventListener("click", function() {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+
+        // ظهور البطاقات بدون إلغاء التدوير والـoffset الخاصين بالتصميم
+        const cards = document.querySelectorAll(".skill-card, .project, .info-item");
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        cards.forEach(function(card) {
+            card.classList.add("reveal-card");
+            observer.observe(card);
+        });
+
+    </script>
+
+</body>
+</html>
