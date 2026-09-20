@@ -518,6 +518,268 @@ footer{background:#080811;color:var(--cyan);text-align:center;padding:25px;borde
 }
 
     </style>
+
+<style id="final-mobile-sizing">
+/* ===== تحسين أبعاد الهاتف ===== */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 850px) {
+  body {
+    font-size: 15px;
+  }
+
+  header {
+    height: 64px;
+    border-bottom-width: 3px;
+  }
+
+  nav {
+    height: 64px;
+    min-height: 64px;
+    padding: 0 12px;
+  }
+
+  .logo {
+    max-width: 125px;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .menu-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-width: 3px;
+    box-shadow: 4px 4px 0 var(--cyan);
+    flex: 0 0 44px;
+  }
+
+  .nav-links {
+    top: 72px;
+    right: 10px;
+    left: 10px;
+    padding: 14px;
+    gap: 8px;
+    border-width: 3px;
+    border-radius: 18px;
+    max-height: calc(100vh - 88px);
+    overflow-y: auto;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .hero {
+    width: 100%;
+    min-height: auto;
+    padding: 94px 16px 58px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-image {
+    width: 100%;
+    min-width: 0;
+    order: -1;
+  }
+
+  .image-circle {
+    width: 250px;
+    height: 250px;
+    max-width: 72vw;
+    max-height: 72vw;
+  }
+
+  .hero-image img {
+    width: 218px;
+    height: 218px;
+    max-width: calc(72vw - 28px);
+    max-height: calc(72vw - 28px);
+    border-width: 6px;
+  }
+
+  .hero-text {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 12vw, 56px);
+    line-height: 1;
+    margin-bottom: 16px;
+    text-shadow: 3px 3px 0 var(--purple), 6px 6px 0 var(--magenta);
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+    max-width: 100%;
+  }
+
+  .buttons {
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .buttons a,
+  .btn {
+    max-width: 100%;
+    min-width: 0;
+    padding: 11px 17px;
+    font-size: 15px;
+  }
+
+  section {
+    width: 100%;
+    padding: 62px 16px;
+  }
+
+  .section-title h2 {
+    font-size: clamp(32px, 9vw, 46px);
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .skill-card,
+  .project-card,
+  .canva-box,
+  .dream-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    height: 58px;
+  }
+
+  nav {
+    height: 58px;
+    min-height: 58px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    max-width: 115px;
+    font-size: 16px;
+  }
+
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+    box-shadow: 3px 3px 0 var(--cyan);
+  }
+
+  .nav-links {
+    top: 65px;
+    right: 8px;
+    left: 8px;
+    padding: 12px;
+  }
+
+  .nav-links a {
+    padding: 9px 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 80px 14px 45px;
+    gap: 18px;
+  }
+
+  .image-circle {
+    width: min(220px, 62vw);
+    height: min(220px, 62vw);
+    border-width: 5px;
+  }
+
+  .hero-image img {
+    width: min(190px, 53vw);
+    height: min(190px, 53vw);
+    border-width: 5px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 48px);
+    margin-bottom: 12px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons a,
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 52px 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 14px;
+    max-width: 105px;
+  }
+
+  .hero {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .image-circle {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero-image img {
+    width: 164px;
+    height: 164px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+}
+</style>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
